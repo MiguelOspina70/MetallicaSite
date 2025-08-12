@@ -1,0 +1,145 @@
+@use "base/variables" as var;
+@use "base/mixins" as mixin;
+
+// 🎵 Sección de Álbumes
+.albumes-section {
+  padding: 2rem;
+  background: linear-gradient(135deg, #1a1a1a 0%, #3b0a0a 100%);
+  color: #fff;
+  text-align: center;
+
+  .grid-albumes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .album-card {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    h3 {
+      margin: 0.8rem 0 0.1rem;
+      font-size: 2.1rem;
+      color: #f0a500;
+    }
+
+    p {
+      font-size: 1.9rem;
+      color: #ccc;
+      margin: 0;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: #222;
+    }
+  }
+}
+
+// 🎵 Modal de Álbum
+.modal {
+  display: none; // Oculto por defecto
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  &.visible {
+    display: flex;
+  }
+
+  .modal-contenido {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    color: #fff;
+    position: relative;
+
+    .cerrar-modal {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #f0a500;
+      }
+    }
+
+    .modal-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+
+      img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .modal-detalles {
+        flex: 1;
+
+        h3 {
+          margin-bottom: 0.5rem;
+          color: #f0a500;
+        }
+
+        p {
+          margin-bottom: 1rem;
+          font-size: 1.9rem;
+          color: #ccc;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          margin-bottom: 1rem;
+
+          li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #333;
+            font-family: var.$font_texts;
+          }
+        }
+
+        .btn-spotify {
+          display: inline-block;
+          background-color: #1db954;
+          color: #fff;
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #17a74a;
+          }
+        }
+      }
+    }
+  }
+}

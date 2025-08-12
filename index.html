@@ -4,9 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MetallicaSite</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/build/css/app.css">
 </head>
 <body>
+    <!-- Mtallica site, las secciones que debe tener son: header con barra de navegación, info de la pagina, nacimiento e historia, 
+        albumes y canciones. integrantes, conciertos legendarios, contatctar al creador de la página -->
+
+    <header class="header">
+        <div class="container content-header">
+            <h1>Metallica Site</h1>
+            <nav class="main-navigation">
+                <a href="#historia" class="history-link">Historia</a>
+                <a href="#integrantes" class="members-link">Integrantes</a>
+                <a href="#musica" class="albums-link">Álbumes</a>
+                <a href="#concerts" class="concerts-link">Conciertos</a>
+                <a href="#concerts" class="concerts-link">Redes</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="info">
+        <div class="overlay">
+            <div class="container content-video">
+                <picture class="logo">
+                    <img width="300" height="300" loading="lazy" src="build/img/logo_metallica.webp" alt="logo Metallica">
+                </picture>
+                <div class="text">
+                    <p class="text-info">
+                        Bienvenido a MetallicaSite, un sitio web dedicado a esta legendaria banda de trash metal. Aquí encontrarás información sobre su historia, álbumes, integrantes y conciertos legendarios.
+                    </p>
+                    <p class="creator">
+                        Creado por: Ingeniero Miguel Ospina - contacto: maot200@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <picture class="bg">
+            <source srcset="build/img/metallica_bg.avif" type="image/avif">
+            <source srcset="build/img/metallica_bg.webp" type="image/webp">
+            <img width="300" height="200" loading="lazy" src="build/img/metallica_bg.jpg" alt="logo Metallica">
+        </picture>
+    </section>
+
+
+    <section id="historia" class="historia-section">
+        <div class="overlay"></div>
+            <div class="container contenido">
+                <h2>Historia de Metallica</h2>
+                <p>
+                    Metallica se formó en 1981 en Los Ángeles por Lars Ulrich (batería) y James Hetfield (voz y guitarra). Tras grabar el demo “Hit the Lights” y mudarse a San Francisco, lanzaron su álbum debut <em>Kill ’Em All</em> en 1983, considerado pionero del thrash metal
+                </p>
+                <p>
+                    En 1984 publicaron <em>Ride the Lightning</em>, expandiendo su sonido con influencias progresivas y firmando con Elektra Records. Su tercer disco, <em>Master of Puppets</em> (1986), es una obra maestra del género. Ese año, el bajista Cliff Burton murió trágicamente en un accidente en gira.
+                </p>
+                <p>
+                    En 1990, ganaron su primer Grammy con la canción “One”. El siguiente año, lanzaron el icónico “Black Album” (1991), con éxitos como “Enter Sandman” y “Nothing Else Matters”, que los impulsó al mainstream mundial.
+                </p>
+                <p>
+                    Uno de sus conciertos más legendarios tuvo lugar en Moscú en 1991 ante más de 1.6 millones de personas, un símbolo de conexión cultural en tiempos de cambio político.
+                </p>
+                <p>
+                    Su legado fue reconocido con su ingreso al Salón de la Fama del Rock en 2009. Y en 2013, rompieron otro récord al convertirse en la primera banda en tocar en los siete continentes, presentándose en la Antártida en un show único llamado “Freeze ’Em All”.
+                </p>
+                <p>
+                    En los años 2000 enfrentaron una crisis interna y cambios de integrantes —documentados en el crudo documental <em>Some Kind of Monster</em>—, y tuvieron un polémico enfrentamiento legal con Napster en defensa del derecho de autor.
+                </p>
+                <p>
+                    Actualmente, Metallica sigue en activo, con la formación compuesta por Hetfield, Ulrich, Kirk Hammett y Robert Trujillo. En 2023 iniciaron la gira mundial <em>M72 World Tour</em> con más de 3 millones de asistentes estimados, demostrando que su legado sigue vigente.
+                </p>
+        </div>
+    </section>
+
+    <section id="integrantes" class="integrantes">
+        <h1>Integrantes</h1>
+    
+        <div class="grupo container">
+            <div class="grid-integrantes">
+                <a href="https://es.wikipedia.org/wiki/James_Hetfield" target="_blank" class="integrante">
+                    <img src="/build/img/integrantes/james.webp" alt="James Hetfield">
+                    <h4>James Hetfield</h4>
+                    <p>Voz, guitarra rítmica (presente)</p>
+                </a>
+                <a href="https://www.instagram.com/larsulrich" target="_blank" class="integrante">
+                    <img src="/build/img/integrantes/lars.webp" alt="Lars Ulrich">
+                    <h4>Lars Ulrich</h4>
+                    <p>Batería (1981 - presente)</p>
+                </a>
+                <a href="https://www.instagram.com/kirkhammett" target="_blank" class="integrante">
+                    <img src="/build/img/integrantes/kirk.webp" alt="Kirk Hammett">
+                    <h4>Kirk Hammett</h4>
+                    <p>Guitarra principal (1983 - presente)</p>
+                </a>
+                <a href="https://www.instagram.com/robtrujillo" target="_blank" class="integrante">
+                    <img src="/build/img/integrantes/attachment-gettyimages-1073128908_ethanmiller_nov262018_lasvegas.webp" alt="Robert Trujillo">
+                    <h4>Robert Trujillo</h4>
+                    <p>Bajo (2003 - presente)</p>
+                </a>
+            </div>
+        </div>
+    
+        <!-- Integrantes anteriores -->
+        <div class="grupo container">
+            <h3>Integrantes anteriores</h3>
+            <div class="grid-integrantes">
+                <a href="https://www.instagram.com/davemustaine" target="_blank" class="integrante">
+                    <img src="/build/img/integrantes/dave.webp" alt="Dave Mustaine">
+                    <h4>Dave Mustaine</h4>
+                    <p>Guitarra principal (1981–1983)</p>
+                </a>
+                <a href="https://www.instagram.com/newsted21" target="_blank" class="integrante">
+                    <img src="/build/img/integrantes/jason.webp" alt="Jason Newsted">
+                    <h4>Jason Newsted</h4>
+                    <p>Bajo (1986–2001)</p>
+                </a>
+                <a href="https://es.wikipedia.org/wiki/Cliff_Burton" target="_blank" class="integrante">
+                    <img src="/build/img/integrantes/cliff.webp" alt="Cliff Burton">
+                    <h4>Cliff Burton</h4>
+                    <p>Bajo (1982–1986)</p>
+                </a>
+                <a href="https://es.wikipedia.org/wiki/Ron_McGovney" target="_blank" class="integrante">
+                    <img src="/build/img/integrantes/ron.webp" alt="Ron McGovney">
+                    <h4>Ron McGovney</h4>
+                    <p>Bajo (1982)</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="albumes" class="albumes-section">
+            <h1>Álbumes</h1>
+            <div id="albumes-container" class="container grid-albumes"></div>
+    </section>
+
+    <div id="modal-album" class="modal">
+        <div class="modal-contenido">
+            <span id="cerrar-modal" class="cerrar-modal">&times;</span>
+            <div class="modal-info">
+                <img id="modal-imagen" src="" alt="Portada del álbum">
+                <div class="modal-detalles">
+                    <h3 id="modal-titulo"></h3>
+                    <p id="modal-anio"></p>
+                    <ul id="modal-canciones"></ul>
+                    <a id="modal-link" href="#" target="_blank" class="btn-spotify">Escuchar en Spotify</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="build/js/app.js" ></script>
     
 </body>
 </html>

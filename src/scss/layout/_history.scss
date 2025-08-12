@@ -1,0 +1,21 @@
+.historia-section{
+    position: relative;
+    background-image: url('/build/img/Petrusich-Metallica.webp');
+    background-size: cover;
+    background-position: center;
+    color: #F5F5F5;
+    padding: 2rem 2rem;
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .contenido{
+        position: relative;
+        text-align: left;
+    }
+}

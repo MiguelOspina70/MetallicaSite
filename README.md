@@ -40,7 +40,7 @@ All dependencies required to run the project are listed in the **`package.json`*
 To install them, run:
 
 open a new terminal in vs code after open the project and run this command:
-npm install
+```npm install```
 
-In the "src" folder, you will find the editable files such as styles, scripts, etc. Make sure that after installing the dependencies mentioned above, you run the command "npm run dev" 
+In the "src" folder, you will find the editable files such as styles, scripts, etc. Make sure that after installing the dependencies mentioned above, you run the command ```npm run dev```
 before making any modifications. This will activate the tasks in the "gulpfile", which is responsible for compiling the Sass code to CSS, among other things.

@@ -17,6 +17,14 @@ export function js(done) {
     done();
 }
 
+export function json(done) {
+
+    src('src/data/**/*.json') 
+        .pipe(terser()) 
+        .pipe(dest('build/data')) 
+    done();
+}
+
 export function css(done) {
 
 
@@ -30,10 +38,10 @@ export function css(done) {
 }
 
 export async function crop(done) {
-    const inputFolder = 'src/img/gallery/full'
-    const outputFolder = 'src/img/gallery/thumb';
-    const width = 250;
-    const height = 180;
+    const inputFolder = 'src/img/albums';
+    const outputFolder = 'src/img/albums/thumb';
+    const width = 200;
+    const height = 130;
     if (!fs.existsSync(outputFolder)) {
         fs.mkdirSync(outputFolder, { recursive: true })
     }
@@ -89,7 +97,8 @@ function procesarImagenes(file, outputSubDir) {
 export function dev() {
     watch('src/scss/**/*.scss', css)
     watch('src/js/**/*.js', js)
+    watch('src/data/**/*.json', json)
     watch('src/js/**/*.{png,jpg}', imagenes)
 }
 
-export default series(crop, js, css, imagenes, dev)
+export default series(crop, js, json, css, imagenes, dev)

@@ -1,0 +1,206 @@
+[
+    {
+        "nombre": "Kill 'Em All",
+        "anio": 1983,
+        "imagen": "build/img/albums/1.webp",
+        "spotify": "https://open.spotify.com/album/3mhvur5wygorCzDKd7tWYh",
+        "canciones": [
+        "Hit the Lights",
+        "The Four Horsemen",
+        "Motorbreath",
+        "Jump in the Fire",
+        "Whiplash",
+        "Phantom Lord",
+        "No Remorse",
+        "Seek & Destroy",
+        "Metal Militia"
+        ]
+    },
+    {
+        "nombre": "Ride the Lightning",
+        "anio": 1984,
+        "imagen": "build/img/albums/2.webp",
+        "spotify": "https://open.spotify.com/album/1zahU9Q8YpqO9cI7g1ojIR",
+        "canciones": [
+        "Fight Fire with Fire",
+        "Ride the Lightning",
+        "For Whom the Bell Tolls",
+        "Fade to Black",
+        "Trapped Under Ice",
+        "Escape",
+        "Creeping Death",
+        "The Call of Ktulu"
+        ]
+    },
+    {
+        "nombre": "Master of Puppets",
+        "anio": 1986,
+        "imagen": "build/img/albums/3.webp",
+        "spotify": "https://open.spotify.com/album/2xkCiQVV2ayl6h5kuV9G29",
+        "canciones": [
+        "Battery",
+        "Master of Puppets",
+        "The Thing That Should Not Be",
+        "Welcome Home (Sanitarium)",
+        "Disposable Heroes",
+        "Leper Messiah",
+        "Orion",
+        "Damage, Inc."
+        ]
+    },
+    {
+        "nombre": "...And Justice for All",
+        "anio": 1988,
+        "imagen": "build/img/albums/4.webp",
+        "spotify": "https://open.spotify.com/album/3WuHVSVQSEjGwrKipPQV7l",
+        "canciones": [
+        "Blackened",
+        "...And Justice for All",
+        "Eye of the Beholder",
+        "One",
+        "The Shortest Straw",
+        "Harvester of Sorrow",
+        "The Frayed Ends of Sanity",
+        "To Live Is to Die",
+        "Dyers Eve"
+        ]
+    },
+    {
+        "nombre": "Metallica (The Black Album)",
+        "anio": 1991,
+        "imagen": "build/img/albums/5.webp",
+        "spotify": "https://open.spotify.com/album/2Kh43m04B1UkVcpcRa1Zug",
+        "canciones": [
+        "Enter Sandman",
+        "Sad but True",
+        "Holier Than Thou",
+        "The Unforgiven",
+        "Wherever I May Roam",
+        "Don't Tread on Me",
+        "Through the Never",
+        "Nothing Else Matters",
+        "Of Wolf and Man",
+        "The God That Failed",
+        "My Friend of Misery",
+        "The Struggle Within"
+        ]
+    },
+    {
+        "nombre": "Load",
+        "anio": 1996,
+        "imagen": "build/img/albums/6.webp",
+        "spotify": "https://open.spotify.com/album/0mwcyt5wX9LbfWH5n0nBPi",
+        "canciones": [
+        "Ain’t My Bitch",
+        "2 X 4",
+        "The House Jack Built",
+        "Until It Sleeps",
+        "King Nothing",
+        "Hero of the Day",
+        "Bleeding Me",
+        "Cure",
+        "Poor Twisted Me",
+        "Wasting My Hate",
+        "Mama Said",
+        "Thorn Within",
+        "Ronnie",
+        "The Outlaw Torn"
+        ]
+    },
+    {
+        "nombre": "Reload",
+        "anio": 1997,
+        "imagen": "build/img/albums/7.webp",
+        "spotify": "https://open.spotify.com/album/6HfQmRcBi63eBC6ZOA9UEh",
+        "canciones": [
+        "Fuel",
+        "The Memory Remains",
+        "Devil’s Dance",
+        "The Unforgiven II",
+        "Better than You",
+        "Slither",
+        "Carpe Diem Baby",
+        "Bad Seed",
+        "Where the Wild Things Are",
+        "Prince Charming",
+        "Low Man’s Lyric",
+        "Attitude",
+        "Fixxxer"
+        ]
+    },
+    {
+        "nombre": "St. Anger",
+        "anio": 2003,
+        "imagen": "build/img/albums/8.webp",
+        "spotify": "https://open.spotify.com/album/4qmQl9Fsno9w53Cf7UzUHU",
+        "canciones": [
+        "Frantic",
+        "St. Anger",
+        "Some Kind of Monster",
+        "Dirty Window",
+        "Invisible Kid",
+        "My World",
+        "Shoot Me Again",
+        "Sweet Amber",
+        "The Unnamed Feeling",
+        "Purify",
+        "All Within My Hands"
+        ]
+    },
+    {
+        "nombre": "Death Magnetic",
+        "anio": 2008,
+        "imagen": "build/img/albums/9.webp",
+        "spotify": "https://open.spotify.com/album/5GWZI3D5HkO0bL23keRsbI",
+        "canciones": [
+        "That Was Just Your Life",
+        "The End of the Line",
+        "Broken, Beat & Scarred",
+        "The Day That Never Comes",
+        "All Nightmare Long",
+        "Cyanide",
+        "The Unforgiven III",
+        "The Judas Kiss",
+        "Suicide & Redemption",
+        "My Apocalypse"
+        ]
+    },
+    {
+        "nombre": "Hardwired… to Self-Destruct",
+        "anio": 2016,
+        "imagen": "build/img/albums/10.webp",
+        "spotify": "https://open.spotify.com/album/1SlwbMkBJbCZTLzDbVq3Am",
+        "canciones": [
+        "Hardwired",
+        "Atlas, Rise!",
+        "Now That We’re Dead",
+        "Moth Into Flame",
+        "Dream No More",
+        "Halo on Fire",
+        "Confusion",
+        "Here Comes Revenge",
+        "Am I Savage?",
+        "Murder One",
+        "Spit Out the Bone"
+        ]
+    },
+    {
+        "nombre": "72 Seasons",
+        "anio": 2023,
+        "imagen": "build/img/albums/11.webp",
+        "spotify": "https://open.spotify.com/album/0G3RgXPsyyaKdC4ApIhiGG",
+        "canciones": [
+        "72 Seasons",
+        "Shadows Follow",
+        "Screaming Suicide",
+        "Sleepwalk My Life Away",
+        "You Must Burn!",
+        "Lux Æterna",
+        "Crown of Barbed Wire",
+        "Chasing Light",
+        "If Darkness Had a Son",
+        "72 Seasons (Reprise)",
+        "Inamorata"
+        ]
+    }
+]

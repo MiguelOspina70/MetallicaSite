@@ -1,0 +1,55 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mixin;
+
+.header{
+    background-color: var.$black ;
+    border-bottom: 1px solid var.$white;
+
+    @include mixin.tablet{
+
+        &.fijo{
+            position: fixed; // Fija el header en la parte superior de la pantalla
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10; // Asegura que el header esté por encima de otros elementos
+            box-shadow: 0 0.5rem 1rem rgba(var.$black, 0.2); // Sombra para darle profundidad
+        }
+    }
+
+    .content-header{ // Contenido del header, vemos que conn sass se puede anidar las clases que esten dentro de otra clase o un contenedor padre
+        padding: 2rem;
+        @include mixin.tablet{ // Importamos el mixin para tablet, que es un media query que tenemos en la carpeta base
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }; 
+    }
+    .main-navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        @include mixin.tablet{ // Importamos el mixin para tablet, que es un media query que tenemos en la carpeta base
+            flex-direction: row;
+        }
+        a{
+            color: var.$white;
+            font-size: 2,4rem;
+
+            &:hover, &.activo{ // Con el & podemos referenciar a la clase padre, en este caso a la etiqueta a
+                color: var.$yellow;
+            }
+        }
+    }
+    h1{
+        color: var.$white;
+        margin-bottom: 2rem;
+        text-align: center;
+        @include mixin.tablet{
+            text-align: left;
+            margin: 0;
+        }
+    }
+}

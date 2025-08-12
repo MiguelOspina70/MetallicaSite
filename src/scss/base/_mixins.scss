@@ -1,1 +1,37 @@
-@use 'variables' as var;
+@use 'variables' as var; // Importamos las variables que tenemos en la carpeta base, para poder reutilizarlas en este archivo
+
+@mixin phone{
+    @media (min-width: var.$phone) {
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (min-width: var.$tablet) {
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width: var.$desktop) {
+        @content;
+    }
+}
+
+@mixin container{
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@mixin grid($columnas : 1, $gap : 5rem){ // Definimos un mixin para crear un grid con el número de columnas que le pasemos como parámetro y la separación, pero si no le pasamos gap, por defecto será de 5rem
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $gap;
+}
+
+@mixin reset-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
